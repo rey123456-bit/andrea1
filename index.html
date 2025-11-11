@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charque de Llama - Delicias Andinas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="img/Logo de charque de llama en Cosapa_1762611060173.jpg" alt="Charque de Llama">
+                <h1>Charque de Llama</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="#historia"><i class="fas fa-history"></i> Historia</a></li>
+                    <li><a href="#catalogo"><i class="fas fa-shopping-bag"></i> Catálogo</a></li>
+                    <li><a href="#galeria"><i class="fas fa-images"></i> Galería</a></li>
+                    <li><a href="#contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+                    <li><a href="#referencias"><i class="fas fa-star"></i> Referencias</a></li>
+                    <li><a href="#reservas"><i class="fas fa-calendar-alt"></i> Reservas</a></li>
+                </ul>
+            </nav>
+            
+            <div class="search-cart">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Buscar productos...">
+                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h2>Bienvenidos a Nuestra Tienda</h2>
+            <p>Descubre el auténtico sabor del charque de llama, una deliciosa tradición andina llena de nutrientes y sabor único.</p>
+            <a href="#catalogo" class="btn">Ver Productos</a>
+        </div>
+    </section>
+
+    <!-- Iconos de Navegación -->
+    <section class="icon-nav">
+        <div class="container">
+            <h2>Navega por Nuestro Sitio</h2>
+            <div class="icon-grid">
+                <div class="icon-item" data-target="historia">
+                    <i class="fas fa-history"></i>
+                    <h3>Nuestra Historia</h3>
+                    <p>Conoce nuestra tradición</p>
+                </div>
+                <div class="icon-item" data-target="catalogo">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>Catálogo</h3>
+                    <p>Nuestros productos</p>
+                </div>
+                <div class="icon-item" data-target="galeria">
+                    <i class="fas fa-images"></i>
+                    <h3>Galería</h3>
+                    <p>Imágenes de nuestro proceso</p>
+                </div>
+                <div class="icon-item" data-target="contacto">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Contacto</h3>
+                    <p>Ponte en contacto</p>
+                </div>
+                <div class="icon-item" data-target="referencias">
+                    <i class="fas fa-star"></i>
+                    <h3>Referencias</h3>
+                    <p>Lo que dicen nuestros clientes</p>
+                </div>
+                <div class="icon-item" data-target="reservas">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Reservas</h3>
+                    <p>Haz tu pedido con anticipación</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Historia -->
+    <section id="historia" class="section">
+        <div class="container">
+            <h2>Nuestra Historia</h2>
+            <div class="history-content">
+                <div class="history-text">
+                    <p>Nuestra empresa nació en el corazón de los Andes, donde las llamas han sido parte fundamental de la cultura y subsistencia de las comunidades locales por siglos. Inspirados por las tradiciones ancestrales, decidimos compartir el delicioso charque de llama con el mundo.</p>
+                    <p>El charque es una técnica de deshidratación de carne que se remonta a la época precolombina. Los incas utilizaban este método para preservar la carne por largos periodos, asegurando alimento durante sus viajes y en épocas de escasez.</p>
+                    <p>Hoy, combinamos estas técnicas tradicionales con los más altos estándares de calidad e higiene, ofreciendo un producto nutritivo, bajo en grasa y con un sabor único que captura la esencia de los Andes.</p>
+                </div>
+                <div class="history-image">
+                    <img src="img/20251108_095820-COLLAGE.jpg" alt="Proceso tradicional de charque">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Catálogo -->
+    <section id="catalogo" class="section">
+        <div class="container">
+            <h2>Nuestro Catálogo</h2>
+            
+            <!-- Menú dividido en tres secciones -->
+            <div class="menu-categories">
+                <div class="menu-category">
+                    <h3>CHARQUE DE LLAMA</h3>
+                    <ul>
+                        <li>Charque de Llama Ahumado</li>
+                        <li>Charque de Llama Especial</li>
+                        <li>Charque de Llama Tradicional</li>
+                    </ul>
+                </div>
+                <div class="menu-category">
+                    <h3>PLATOS DE CHARQUEKAN</h3>
+                    <ul>
+                        <li>Charquekan familiar</li>
+                        <li>Charque picante</li>
+                        <li>charquekan</li>
+                    </ul>
+                </div>
+                <div class="menu-category">
+                    <h3>Productos Relacionados</h3>
+                    <ul>
+                        <li>Charque empaquetado</li>
+                        <li>Charque salado</li>
+                        <li>Charque semi cosido</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="catalog-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/Imagen de Charque para Galera fondo blanco_1762610900567.jpg" alt="Charque de Llama Tradicional">
+                    </div>
+                    <div class="product-info">
+                        <h3>CHARQUE AHUMADO</h3>
+                        <p>Charque de llama con un delicado proceso de ahumado.</p>
+                        <div class="product-price">Bs 50 / 500g</div>
+                        <button class="add-to-cart" data-id="1" data-name="Charque ahumado" data-price="25.00" data-image="img/Imagen de Charque para Galera fondo blanco_1762610900567.jpg">Añadir al Carrito</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/IMG-20251105-WA0004(1).jpg" alt="Charque especial">
+                    </div>
+                    <div class="product-info">
+                        <h3>CHARQUE ESPECIAL</h3>
+                        <p>Charque de llama con porciones mas grandes y no picados.</p>
+                        <div class="product-price">Bs 60 / 510g</div>
+                        <button class="add-to-cart" data-id="2" data-name="Charque especial" data-price="28.00" data-image="img/IMG-20251105-WA0004(1).jpg">Añadir al Carrito</button>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/IMG-20251108-WA0009.jpg" alt="Charque de llama">
+                    </div>
+                    <div class="product-info">
+                        <h3>CHARQUE TRADICIONAL</h3>
+                        <p>Carne de llama deshidratada al estilo tradicional andino.</p>
+                        <div class="product-price">Bs 45 / 350g</div>
+                        <button class="add-to-cart" data-id="3" data-name="charque-tradicional" data-price="30.00" data-image="img/IMG-20251108-WA0009.jpg">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/IMG-20251108-WA0012.jpg" alt="charquekan familiar">
+                    </div>
+                    <div class="product-info">
+                        <h3>CHARQUEKAN FAMILIAR</h3>
+                        <p>Variedad de nuestros mejores charques para probar.</p>
+                        <div class="product-price">Bs 85 / 450g</div>
+                        <button class="add-to-cart" data-id="4" data-name="CHARQUEKAN FAMILIAR" data-price="50.00" data-image="img/IMG-20251108-WA0012.jpg">Añadir al Carrito</button>
+                    </div>
+                </div>
+                 <!-- Producto 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                         <img src="img/IMG-20251108-WA0014.jpg" alt="Charque de Llama picante">
+                    </div>
+                    <div class="product-info">
+                         <h3>CHARQUE PICANTE</h3>
+                         <p>charque de llama con un poco de aji para un toque picante</p>
+                         <div class="product-price">Bs 45 / 250g</div>
+                         <button class="add-to-cart" data-id="5" data-name="Charque picante" data-price="35.00" data-image="img/IMG-20251108-WA0003.jpg">Añadir al Carrito</button>
+                     </div>
+                 </div>
+                <!-- Producto 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/IMG-20251108-WA0015.jpg" alt="Charquekan">
+                    </div>
+                    <div class="product-info">
+                        <h3>CHARQUEKAN</h3>
+                        <p>Ideal el plato tipico para una buena degustación</p>
+                        <div class="product-price">Bs 75 / 220g</div>
+                        <button class="add-to-cart" data-id="6" data-name="Charquekan" data-price="75." data-image="img/IMG-20251106-WA0001.jpg">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <!-- Producto 7 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/IMG-20251106-WA0001.jpg" alt="Charque empaquetado">
+                    </div>
+                    <div class="product-info">
+                        <h3>CHARQUE EMPAQUETADO</h3>
+                        <p>Selección especial de los mejores cortes.</p>
+                        <div class="product-price">Bs 150/ 450g</div>
+                        <button class="add-to-cart" data-id="7" data-name="Charque empaquetado" data-price="40.00" data-image="img/IMG-20251108-WA0010.jpg">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <!-- Producto 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/IMG-20251108-WA0010.jpg" alt="Charque salado">
+                    </div>
+                    <div class="product-info">
+                        <h3>CHARQUE SALADO</h3>
+                        <p>charque de llama empaquetado salado.</p>
+                        <div class="product-price">Bs 120 / 5g</div>
+                        <button class="add-to-cart" data-id="8" data-name="Charque salado" data-price="60.00" data-image="img/IMG-20251108-WA0015.jpg">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <!-- Producto 8 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/IMG-20251108-WA0003.jpg" alt="Charque salado">
+                    </div>
+                    <div class="product-info">
+                        <h3>CHARQUE SEMI COSIDO</h3>
+                        <p>Charque de llama empaquetado semi cosido al gusto del cliente.</p>
+                        <div class="product-price">Bs 135/ 420g</div>
+                        <button class="add-to-cart" data-id="8" data-name="Charque semi cosido" data-price="60.00" data-image="img/IMG-20251108-WA0015.jpg">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería -->
+    <section id="galeria" class="section">
+        <div class="container">
+            <h2>Galería</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-image="hola/20251111_084347-COLLAGE.jpg" data-description="Charque de llama tradicional listo para su consumo. Producto 100% natural sin conservantes.">
+                    <img src="hola/20251111_084347-COLLAGE.jpg" alt="primer paso">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="hola/20251111_084936-COLLAGE.jpg" data-description="descuartisar la carne de llama .">
+                    <img src="hola/20251111_084936-COLLAGE.jpg" alt="segundo paso">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="hola/20251111_085007-COLLAGE.jpg" data-description="Proceso tradicional de preparación del charque de llama.">
+                    <img src="hola/20251111_085007-COLLAGE.jpg" alt="tercer paso">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="hola/FB_IMG_1762851584955.jpg" data-description="Poniendo la charque de llama para que se seque.">
+                    <img src="hola/FB_IMG_1762851584955.jpg" alt="cuarto paso">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="hola/20251111_085133-COLLAGE.jpg" data-description="Ya secado el charque de llama hasta que se vea así.">
+                    <img src="hola/20251111_085133-COLLAGE.jpg" alt="quinto paso">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-image="hola/20251111_085316-COLLAGE.jpg" data-description="Ya se muestra todo acabado el producto.">
+                    <img src="hola/20251111_085316-COLLAGE.jpg" alt="sexto paso">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Ruta Nacional-27, Cosapa</p>
+                        <p><i class="fas fa-phone"></i> +591 73207623</p>
+                        <p><i class="fas fa-envelope"></i> merloandrea357@gmail.com</p>
+                        <p><i class="fas fa-clock"></i> Lunes a Viernes: 9:00 - 21:00</p>
+                    </div>
+                    
+                    <!-- Icono de ubicación -->
+                    <div class="location-container">
+                        <div class="location-icon" id="locationIcon">
+                            <div class="pulse"></div>
+                            <div class="pin"></div>
+                        </div>
+                        
+                        <div class="location-info">
+                            <div class="location-name">Charque de Llama</div>
+                            <div class="location-address">Ruta Nacional-27, Cosapa</div>
+                            <button class="btn" id="directionsBtn">Cómo llegar</button>
+                        </div>
+                    </div>
+                    
+                    <h3>Síguenos en Redes Sociales</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Referencias -->
+    <section id="referencias" class="section">
+        <div class="container">
+            <h2>Referencias de Clientes</h2>
+            <div class="references-grid">
+                <div class="reference-card">
+                    <div class="reference-text">
+                        El charque de llama es simplemente excepcional. El sabor auténtico y la calidad del producto superaron mis expectativas. Definitivamente volveré a comprar.
+                    </div>
+                    <div class="reference-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="María González">
+                        <div class="author-info">
+                            <h4>María González</h4>
+                            <p>Cliente </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reference-card">
+                    <div class="reference-text">
+                        Como amante de la gastronomía andina, he probado muchos charques, pero este es sin duda el mejor. La textura y el sabor son perfectos.
+                    </div>
+                    <div class="reference-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Rodríguez">
+                        <div class="author-info">
+                            <h4>Carlos Rodríguez</h4>
+                            <p>cliente 2</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reference-card">
+                    <div class="reference-text">
+                        Compré el pack degustación y quedé encantado. Cada variedad tiene su propio carácter, pero todas mantienen esa calidad excepcional que los caracteriza.
+                    </div>
+                    <div class="reference-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ana Martínez">
+                        <div class="author-info">
+                            <h4>Ana Martínez</h4>
+                            <p>Cliente frecuente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Reservas -->
+    <section id="reservas" class="section">
+        <div class="container">
+            <h2>Reservas y Pedidos Especiales</h2>
+            <div class="reservation-content">
+                <div class="reservation-form">
+                    <form id="reservationForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reservation-name">Nombre Completo</label>
+                                <input type="text" id="reservation-name" name="reservation-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reservation-phone">Teléfono</label>
+                                <input type="tel" id="reservation-phone" name="reservation-phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reservation-email">Email</label>
+                                <input type="email" id="reservation-email" name="reservation-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="reservation-date">Fecha de Entrega</label>
+                                <input type="date" id="reservation-date" name="reservation-date" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reservation-product">Producto</label>
+                            <select id="reservation-product" name="reservation-product" required>
+                                <option value="">Seleccione un producto</option>
+                                <option value="charque-tradicional">Charque Tradicional</option>
+                                <option value="charque-picante">Charque Picante</option>
+                                <option value="charque-ahumado">Charque Ahumado</option>
+                                <option value="pack-degustacion">Pack Degustación</option>
+                                <option value="personalizado">Pedido Personalizado</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reservation-quantity">Cantidad (en kg)</label>
+                            <input type="number" id="reservation-quantity" name="reservation-quantity" min="0.5" step="0.5" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reservation-notes">Notas Adicionales</label>
+                            <textarea id="reservation-notes" name="reservation-notes"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Realizar Reserva</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrito de Compras -->
+    <div class="overlay" id="overlay"></div>
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Los productos del carrito se agregarán aquí dinámicamente -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">$0.00</span>
+        </div>
+        <div class="cart-actions">
+            <button class="checkout-btn" id="checkoutBtn">Proceder al Pago</button>
+            <button class="continue-shopping" id="continueShopping">Seguir Comprando</button>
+        </div>
+    </div>
+
+    <!-- Modal de Pago con QR -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="payment-content">
+            <div class="payment-header">
+                <h3>Pago con QR</h3>
+                <button class="close-payment" id="closePayment">&times;</button>
+            </div>
+            <div class="payment-body">
+                <div class="payment-info">
+                    <p>Total a pagar: <strong id="paymentTotal">$0.00</strong></p>
+                    <p>Escanea el código QR con tu aplicación de pagos móvil</p>
+                </div>
+                <div class="qr-code-container">
+                    <div class="qr-code">
+                        <img src="img/Screenshot_20251108_093611.jpg" alt="Código QR para pago" id="qrImage">
+                    </div>
+                    <div class="qr-details">
+                        <p><strong>Cobra con QR</strong></p>
+                        <p>Válido hasta: 25 de noviembre de 2027</p>
+                        <p>CTA: 3538412-000-001</p>
+                    </div>
+                    <div class="payment-methods">
+                        <p>Métodos de pago aceptados:</p>
+                        <div class="payment-icons">
+                            <i class="fab fa-paypal"></i>
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-amex"></i>
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-instructions">
+                    <h4>Instrucciones de pago:</h4>
+                    <ol>
+                        <li>Abre tu aplicación de pagos móvil</li>
+                        <li>Selecciona la opción "Escanear QR"</li>
+                        <li>Apunta tu cámara al código QR</li>
+                        <li>Confirma el monto y realiza el pago</li>
+                        <li>Guarda el comprobante de pago</li>
+                    </ol>
+                </div>
+                <div class="payment-confirmation">
+                    <button class="btn payment-confirm-btn" id="paymentConfirm">He realizado el pago</button>
+                    <button class="btn payment-cancel-btn" id="paymentCancel">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Factura -->
+    <div class="invoice-modal" id="invoiceModal">
+        <div class="invoice-content">
+            <div class="invoice-header">
+                <h3>Factura de Compra</h3>
+                <button class="close-invoice" id="closeInvoice">&times;</button>
+            </div>
+            <div class="invoice-body">
+                <div class="invoice-company">
+                    <h2>Charque de Llama</h2>
+                    <p>Ruta Nacional-27, Cosapa</p>
+                    <p>Tel: +591 73207623 | Email: merloandrea357.com</p>
+                </div>
+                
+                <div class="invoice-details">
+                    <div class="invoice-info">
+                        <p><strong>Factura N°:</strong> <span id="invoiceNumber">F-2023-001</span></p>
+                        <p><strong>Fecha:</strong> <span id="invoiceDate">01/11/2023</span></p>
+                        <p><strong>Cliente:</strong> <span id="invoiceCustomer">Cliente</span></p>
+                    </div>
+                </div>
+                
+                <div class="invoice-items">
+                    <table id="invoiceItemsTable">
+                        <thead>
+                            <tr>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Precio Unit.</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Los productos de la factura se agregarán aquí -->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="text-right"><strong>Subtotal:</strong></td>
+                                <td id="invoiceSubtotal">$0.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-right"><strong>IVA (13%):</strong></td>
+                                <td id="invoiceTax">$0.00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="text-right"><strong>Total:</strong></td>
+                                <td id="invoiceTotal">$0.00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                
+                <div class="invoice-footer">
+                    <p><strong>Método de pago:</strong> Transferencia QR</p>
+                    <p><strong>Estado:</strong> <span class="status-paid">Pagado</span></p>
+                    <p class="thank-you">¡Gracias por su compra!</p>
+                </div>
+                
+                <div class="invoice-actions">
+                    <button class="btn invoice-print-btn" id="invoicePrint">Imprimir Factura</button>
+                    <button class="btn invoice-download-btn" id="invoiceDownload">Descargar PDF</button>
+                    <button class="btn invoice-close-btn" id="invoiceClose">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Galería -->
+    <div class="gallery-modal" id="galleryModal">
+        <button class="close-gallery" id="closeGallery">&times;</button>
+        <div class="gallery-modal-content">
+            <img id="galleryModalImage" src="" alt="">
+            <div class="gallery-modal-description" id="galleryModalDescription"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Charque de Llama</h3>
+                    <p>Ofrecemos el auténtico charque de llama, preparado con técnicas tradicionales andinas y los más altos estándares de calidad.</p>
+                    <p>Descubre el sabor único de los Andes en cada bocado.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#historia">Nuestra Historia</a></li>
+                        <li><a href="#catalogo">Catálogo</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Productos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#catalogo">Charque Tradicional</a></li>
+                        <li><a href="#catalogo">Charque Picante</a></li>
+                        <li><a href="#catalogo">Charque Ahumado</a></li>
+                        <li><a href="#catalogo">Charaquekan</a></li>
+                        <li><a href="#reservas">Pedidos Especiales</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Ruta Nacional-27, Cosapa</p>
+                    <p><i class="fas fa-phone"></i> +591 73207623</p>
+                    <p><i class="fas fa-envelope"></i> merloandrea357</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2022 Charque de Llama en Cosapa. Todos Bienvenidos a nuestra pagina web.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
